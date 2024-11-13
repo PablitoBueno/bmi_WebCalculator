@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <!-- Form to calculate BMI -->
+        <div class="form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" min="1">
+
+            <label for="height">Height (m):</label>
+            <input type="number" id="height" step="0.01" placeholder="Enter your height" min="0.1">
+
+            <button id="calculateBmi">Calculate BMI</button>
+        </div>
+
+        <!-- BMI result -->
+        <div class="result">
+            <h2 id="bmiResult">BMI: </h2>
+        </div>
+
+        <!-- Button to generate report -->
+        <div class="report">
+            <button id="generateReport" disabled>Generate Report</button>
+        </div>
+
+        <!-- Generated report area -->
+        <div class="generated-report" id="report">
+            <!-- The report will be inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
